@@ -103,7 +103,7 @@ public class CustomerdaoImpl{
 
     public Map<String, Long> getTicketCountsByStatus(Long managerId) {
         try {
-           // List<Object[]> results = ticketRepo.countTicketsByStatus(managerId);
+           List<Object[]> results = ticketRepo.countTicketsByStatus(managerId);
             Map<String, Long> ticketCounts = new HashMap<>();
 
             for (Object[] result : results) {
